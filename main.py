@@ -6,7 +6,6 @@ from plyer import notification
 import time
 import threading
 from tkinter import *
-from tkinter import messagebox
 
 
 root = tk.Tk()
