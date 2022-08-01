@@ -20,7 +20,7 @@ label1 = tk.Label(root, text='Desktop Notifier App')
 label1.config(font=('helvetica', 14))
 canvas1.create_window(200, 25, window=label1)
 
-label2 = tk.Label(root, text="How many seconds do you want an alert in?")
+label2 = tk.Label(root, text="How long do you want to wait until your notification?")
 label2.config(font=('helvetica', 10))
 canvas1.create_window(200, 100, window=label2)
 
