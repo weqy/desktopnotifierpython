@@ -23,9 +23,6 @@ label2 = tk.Label(root, text="How long do you want to wait until your notificati
 label2.config(font=('helvetica', 10))
 canvas1.create_window(200, 100, window=label2)
 
-#entry1 = tk.Entry(root)
-#canvas1.create_window(200, 140, window=entry1)
-
 def clear_text():
    entry1.delete(0, END)
 
@@ -104,29 +101,6 @@ def countdowntimer():
         # decresing the value of temp
         # after every one sec by one
         user_input -= 1
-
-'''
-def Take_break():
-
-    if question == int or float:
-       #print("Starting...")
-        response2entry = tk.Label(root, text='Code is running!', font=('helvetica', 10))
-        canvas1.create_window(200, 210, window=response2entry)
-        clear_text()
-        countdowntimer()
-    else:
-        #print("Your entry is invalid.")
-        response2entry = tk.Label(root, fg="red", text='Your entry is invalid. Please enter a number.', font=('helvetica', 10))
-        canvas1.create_window(200, 210, window=response2entry)
-        clear_text()
-
-    while (True):
-        time.sleep(int(question))
-        notification.notify(title="Hello World!",
-                            message="TIMER",
-                            timeout=10)
-        break
-'''
 
 button1 = tk.Button(text='Enter', command=threading.Thread(target=countdowntimer).start)
 canvas1.create_window(200, 200, window=button1)
